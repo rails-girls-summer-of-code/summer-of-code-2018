@@ -1,0 +1,47 @@
+---
+class: page blog post
+layout: bootstrap
+---
+
+<section class="container content--blog content--blog-single l-article">
+  <div class="col-md-8">
+    <article>
+    <h1>{{ page.title }}</h1>
+      <p class='meta'>
+        Posted on <time datetime="{{ page.created_at | date: "%Y-%m-%dT%H:%M:%S%z"  }}">{{ page.created_at | date: "%B %-d, %Y" }}</time> by
+        {% if page.twitter %}
+          <a href='http://twitter.com/{{ page.twitter }}'>{{ page.author }}</a>
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+      </p>
+      {% if page.categories && page.categories > 0 %}
+        <p class="meta categories">Categories: 
+          {% for category in page.categories %}
+            <span class="tag">
+                {% if forloop.last == true %} 
+                  <span class="lowercase">and</span>
+                {% else %}
+                  {% if forloop.first == false %}
+                    , 
+                  {% endif %}
+                {% endif %}
+                {% if category == 'blog' %}
+                <a href="/blog">{{ category }}</a>
+                {% else %}
+                <a href="/blog/categoryview/#{{ category }}">{{ category | replace:'-',' ' }}</a>
+                {% endif %}
+            </span>
+          {% endfor %}
+        </p>
+      {% endif %}
+      {{ content }}
+      <div class="blog-share">
+        <div class="shariff" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;googleplus&quot;]" data-lang="en"></div>
+      </div>
+    </article>
+  </div>
+  <div class="col-md-3 col-md-offset-1 hidden-sm">
+    {% include blog_sidebar.html %}
+  </div>
+</section>

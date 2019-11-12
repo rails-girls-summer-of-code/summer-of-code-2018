@@ -1,0 +1,126 @@
+---
+layout: page
+title: Campaign
+class: page page-campaign
+current: campaign
+stripe: yes
+sponsors: yes
+permalink: campaign/test/
+---
+
+<h2>Help us Fund Rails Girls Summer of Code 2014!</h2>
+
+<p>
+  Rails Girls Summer of Code offers three-months full time scholarships to
+  programming newcomers. Last year's Summer of Code has been a raging success.
+  This year we will make it happen again with <strong>your help</strong>!
+</p>
+
+<h3 class="heart">
+  Thank you for supporting
+</h3>
+
+<p class="custom-donation">
+  <input type="number" id="custom-donation-amount" placeholder="75.00" min="0" step="25.00"/>
+  <a href="#" class="donate-button button" data-custom="true" data-name="Custom">
+    Donate Now <i class="icon-star-white"></i>
+  </a>
+</p>
+
+<p class="stripe-note">
+  Secure Payments by <a href="https://stripe.com/blog/stripe-checkout">Stripe Checkout</a>
+</p>
+
+<p>
+  We aim to support <strong> 20 students</strong> (10 teams) to work full-time,
+  expanding their knowledge and coding skills by contributing to a great Open
+  Source project &mdash; changing the face of Open Source, one woman at a time.
+</p>
+
+<p class="stats">
+  A total of <strong class="total"></strong> has been donated so far. That
+  means this many pairs have been funded:
+</p>
+
+<div id="campaign-progress"></div>
+
+<p>
+  How awesome is that?
+</p>
+
+<h3>Become a Sponsor!</h3>
+
+<p>
+  To support our mission in bigger steps, please ask your company to become a sponsor.
+  You can find all the details about our <a href="/sponsors/packages">Sponsor Packages</a>.
+  If you have any questions please don't hesitate to <a href="mailto:contact@rgsoc.org.">email us</a>.
+</p>
+
+<p>
+  Or go ahead and sign up as a sponsor right now:
+</p>
+
+{% include sponsor_packages.html %}
+
+<section id="thanks-folks">
+  <h2>Thank you so much!</h2>
+  <table id="donations">
+    <colgroup>
+      <col class="col-gravatar"></col>
+      <col class="col-name"></col>
+      <col class="col-amount"></col>
+      <col class="col-package"></col>
+      <col class="col-date"></col>
+      <col class="col-comment"></col>
+    </colgroup>
+    <thead>
+      <tr>
+        <td colspan="6" class="stats">A total of <strong class="total"></strong> has been donated so far!</td>
+      </tr>
+      <tr>
+        <td class='pagination' colspan='5'>
+          <span class='page'>Page: <span class='current-page'>1</span><span>/</span><span class='last-page'></span></span>
+          <span class='sep'>&middot;</span>
+          <span class='first'>First</span>
+          <a class='first' href='#'>First</a>
+          <span class='sep'>&middot;</span>
+          <span class='previous'>Previous</span>
+          <a class='previous' href='#'>Previous</a>
+          <span class='sep'>&middot;</span>
+          <span class='next'>Next</span>
+          <a class='next' href='#'>Next</a>
+          <span class='sep'>&middot;</span>
+          <span class='last'>Last</span>
+          <a class='last' href='#'>Last</a>
+          <span class='sep'>&middot;</span>
+          <a class='all' href='#'>See all</a>
+          <a class='paged' href='#'>See less</a>
+        </td>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <td class='pagination' colspan='6'>
+          <span class='page'>Page: <span class='current-page'>1</span><span>/</span><span class='last-page'></span></span>
+          <span class='sep'>&middot;</span>
+          <span class='first'>First</span>
+          <a class='first' href='#'>First</a>
+          <span class='sep'>&middot;</span>
+          <span class='previous'>Previous</span>
+          <a class='previous' href='#'>Previous</a>
+          <span class='sep'>&middot;</span>
+          <span class='next'>Next</span>
+          <a class='next' href='#'>Next</a>
+          <span class='sep'>&middot;</span>
+          <span class='last'>Last</span>
+          <a class='last' href='#'>Last</a>
+          <span class='sep'>&middot;</span>
+          <a class='all' href='#'>See all</a>
+          <a class='paged' href='#'>See less</a>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>This community is just amazing. Thank you so much!</p>
+</section>

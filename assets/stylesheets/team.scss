@@ -1,0 +1,73 @@
+// Adds space on the top, same as on other pages
+#js-team {
+  margin-top: floor(($font-size-h1 * $headings-line-height)); // 64px
+}
+
+.list--team {
+  overflow: auto;
+  padding: 0;
+}
+.list--team li {
+  padding: 0;
+  margin-bottom: 3em;
+  text-align: center;
+}
+.list--team figure img {
+  width: 10vw;
+  max-width: 12rem;
+  min-width: 60%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.list--team i {
+  margin-right: 0.2em;
+}
+
+/*
+ * Team grid
+ */
+
+.Grid--5 li {
+  display: inline-block;
+  width: 18%;
+  min-width: 130px;
+  margin-right: 2%;
+  vertical-align: top;
+}
+.Grid--5 li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.color--red {
+  color: #d82222;
+}
+
+.page-team article {
+  min-height: 15em;
+}
+.page-team article {
+  min-height: 15em;
+}
+.page-team article.is-loading {
+  background-image: url('../../../img/sprites/ajax-loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*
+ * Student grid
+ */
+#js-students {
+  h2 {
+    margin-top: floor(($font-size-h1 * $headings-line-height)); // 64px
+  }
+  .students-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .students-item {
+      text-align: center;
+      width: 300px;
+    }
+  }
+}

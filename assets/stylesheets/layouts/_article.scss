@@ -1,0 +1,10 @@
+.l-article {
+  & > p {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  & > ul > li {
+    font-size: 18px;
+  }
+}

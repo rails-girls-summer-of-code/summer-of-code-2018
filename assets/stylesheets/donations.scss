@@ -1,0 +1,134 @@
+#thanks-folks {
+  position: relative;
+
+  h2 {
+    margin: 1em 0 0 0;
+  }
+  table {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+
+    tbody {
+      counter-reset: line-number;
+    }
+    tr {
+      border-color: #ddd;
+      border-width: 1px 0;
+      background-color: white;
+      &:nth-child(even) {
+        background-color: #F2F4F9;
+      }
+      &:hover td:last-of-type:after {
+        opacity: 1;
+      }
+    }
+    td {
+      position: relative;
+      padding: 5px;
+      white-space: nowrap;
+      &.stats {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.1em;
+      }
+      &:nth-child(5),
+      &:last-child {
+        font-size: 0.9em;
+      }
+      &:last-child {
+        white-space: normal;
+      }
+      &:last-of-type:after {
+        content: counter(line-number);
+        counter-increment: line-number;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: -3em;
+        width: 3em;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 1em;
+        color: #ddd;
+      }
+    }
+    col {
+      &.col-gravatar {
+        width: 45px;
+      }
+      &.col-name {
+        width: 200px;
+      }
+      &.col-amount {
+        width: 60px;
+      }
+      &.col-package {
+        width: 80px;
+      }
+      &.col-date {
+        width: 120px;
+      }
+    }
+    .twitter, .github, .subscription {
+      display: inline-block;
+      overflow: hidden;
+      width: 16px;
+      text-indent: 16px;
+      background: no-repeat left center;
+    }
+    .github {
+      margin-left: 8px;
+      background-image: url(/img/icons/github.png);
+    }
+    .twitter {
+      margin-left: 6px;
+      background-image: url(/img/icons/twitter.png);
+    }
+    .package {
+      float: left;
+      padding: 3px 10px;
+      background-color: #3f9c33;
+      font-size: 14px;
+      color: white;
+      white-space: nowrap;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+    }
+    .package.custom {
+      display: none;
+    }
+    .subscription {
+      float: left;
+      margin-left: 5px;
+      background-image: url(/images/icons/recurring.png);
+    }
+    tbody a {
+      display: inline-block;
+      vertical-align: middle;
+      color: #666;
+      text-decoration: underline;
+      max-width: 200px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+    }
+  }
+  .sidenote {
+    top: 80px;
+  }
+}
+

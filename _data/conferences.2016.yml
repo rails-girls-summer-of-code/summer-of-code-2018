@@ -1,0 +1,67 @@
+- name: Codemotion Warsaw
+  id: codemotionwarsaw
+  url: http://warsaw2016.codemotionworld.com/
+
+- name: The Strange Loop
+  id: strangeloop
+  url: http://www.thestrangeloop.com
+
+- name: EuRuKo
+  id: euruko
+  url: http://euruko2016.org/
+
+- name: RubyConf Brazil
+  id: rubyconfbr
+  url: http://rubyconfbrcfp.com.br/
+
+- name: GoTo Copenhagen
+  id: gotocph
+  url: https://gotocon.com/cph-2016/
+
+- name: Connect.Tech
+  id: connectjs
+  url: http://connect-js.com/
+
+- name: RubyConf Portugal
+  id: rubyconfpt
+  url: http://rubyconf.pt/
+
+- name: RubyConf Australia
+  id: rubyconfau
+  url: http://rubyconf.org.au/2017
+
+- name: GitHub Universe
+  id: githubuniverse
+  url: http://githubuniverse.com/
+
+- name: JSFoo
+  id: jsfoo
+  url: https://jsfoo.in/2016/
+
+- name: PyCon ZA
+  id: pyconza
+  url: https://za.pycon.org/
+
+- name: Codemotion Berlin
+  id: codemotionberlin
+  url: http://berlin2016.codemotionworld.com/
+
+- name: Beyond Tellerrand
+  id: beyondtellerrand
+  url: https://beyondtellerrand.com
+
+- name: GoTo Berlin
+  id: gotoberlin
+  url: https://gotocon.com/berlin-2016/
+
+- name: DotJS
+  id: dotjs
+  url: http://www.dotjs.io/
+
+- name: RubyConf India
+  id: rubyconfin
+  url: http://rubyconfindia.org/
+
+- name: FOSSASIA
+  id: fossasia
+  url: http://2017.fossasia.org/

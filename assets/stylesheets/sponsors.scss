@@ -1,0 +1,335 @@
+/* ==========================================================================
+   Sponsors
+   ========================================================================== */
+
+.sponsor-container {
+  padding-left: 1em;
+  h3 {
+    margin-bottom: 1em;
+    font-size: 30px;
+    color: $white;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 16px;
+    margin-bottom: .5em;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li ul li {
+    display: inline-block;
+    margin: 0 16px 12px 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .partners h4,
+  .platinum h4 {
+    top: 175px;
+  }
+
+}
+
+.sponsors {
+  margin-bottom: 2em;
+
+  a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 1em;
+    background: $white center center no-repeat;
+    background-size: 100%;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  a div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+
+  &.partners a,
+  &.platinum a {
+    width: 260px;
+    height: 181px;
+  }
+
+  @media screen and (min-width: 340px) {
+      &.partners a,
+      &.platinum a {
+        width: 320px;
+        height: 181px;
+      }
+    }
+
+  .badge:after {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    color: #FFF;
+    line-height: 1;
+    padding: 4px 30px 5px 30px;
+    font-size: 11px;
+    background-color: #BBB;
+    transform: rotate(45deg);
+  }
+  .partner:after {
+    content: "Partner";
+    top: 19px;
+    right: -22px;
+    width: 100px;
+  }
+  .founding-support:after {
+    content: "Founding support";
+    top: 19px;
+    right: -36px;
+    width: 70px;
+  }
+  .support:after {
+    content: "Support + organization";
+    top: 11px;
+    right: -44px;
+    width: 70px;
+  }
+
+}
+
+.sponsors-logo {
+  position: relative;
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+
+#sponsors .gold h4 {
+  top: 125px;
+}
+.sponsors.gold a {
+  width: 250px;
+  height: 131px;
+}
+@media screen and (min-width: 340px) {
+  .sponsors.gold a {
+    width: 320px;
+    height: 131px;
+  }
+}
+#sponsors .silver h4 {
+  top: 87px;
+}
+.sponsors.silver a {
+  width: 235px;
+  height: 93px;
+}
+#sponsors .bronze h4 {
+  top: 70px;
+}
+.sponsors.bronze a {
+  width: 184px;
+  height: 75px;
+}
+#sponsors .conferences h4,
+#sponsors .companies h4 {
+  top: 60px;
+}
+.sponsors.conferences a {
+  width: 151px;
+  height: 61px;
+  background-size: 151px;
+}
+
+.sponsors .years {
+  position: absolute;
+  bottom: -4px;
+  right: 7px;
+  width: 100px;
+  height: 25px;
+  margin-right: 0;
+  text-align: right;
+}
+.sponsors .year {
+  vertical-align: top;
+  margin-right: 0;
+  i:before {
+    content: "\f005";
+    display: block;
+    float: right;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 10px;
+    color: #d82222;
+    margin: 3px 0px;
+  }
+}
+.sponsors.bronze .years {
+  bottom: -7px;
+  right: 6px;
+}
+.sponsor.bronze .year {
+  font-size: 9px;
+}
+
+
+
+.sponsors-cta {
+  vertical-align: top;
+  height: 182px;
+  padding-top: 2em;
+  overflow: hidden;
+  border: dashed $white 1px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.7;
+  a {
+    width: auto;
+    background: $red;
+    text-transform: uppercase;
+    &:after {
+      color: $white;
+    }
+  }
+  h3 {
+    margin-top: 2.5em;
+    text-transform: none;
+    font-size: 22px;
+  }
+
+}
+.hero-title {
+  color: $red;
+  text-transform: uppercase;
+}
+.sponsors-intro {
+  margin-bottom: 5em;
+}
+.sponsors-list > ul {
+  padding: 0;
+  margin: 2em 0 3em;
+  border-top: 1px solid lightgray;
+}
+.sponsors-list li {
+  list-style-type: none;
+}
+.sponsors-list .sponsor {
+  overflow: auto;
+  clear: both;
+  border-bottom: 1px solid lightgray;
+}
+.sponsors-text h4 {
+  display: inline-block;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 0 0 1em;
+}
+.sponsors-text .years,
+.sponsors-text .year {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.sponsors-text .year:after {
+  content: ', '
+}
+.sponsors-text .year:last-child:after {
+  content: ''
+}
+.center-helper {
+  text-align: center;
+}
+.sponsors-logo {
+  margin: 1em 0;
+}
+.sponsors-container {
+  padding-top: 2em;
+}
+.sponsors-container h1 {
+  margin-bottom: 2em;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+.sponsors-container .wrapper {
+  margin-bottom: 0;
+}
+.sponsors-text {
+  padding-top: 1em;
+}
+
+/* Coaching Companies */
+
+.coaching-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height:100vh;
+}
+
+.coaching-item {
+  margin: 5rem 0.5rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  @media screen and (min-width: $screen-sm) {
+    width: calc(47% - 1rem);
+  }
+  @media screen and (min-width: $screen-md) {
+    width: calc(30% - 1rem);
+  }
+}
+
+.coaching-logo {
+  width: 70%;
+  height: auto;
+  text-align: left;
+}
+
+/* Conferences */
+
+.conference-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 544px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.conference-logo {
+  flex: 1 1 100%;
+  @media screen and (max-width: 544px) {
+    margin: 0;
+  }
+}
+
+.conference-text {
+  flex: 1 1 100%;
+  margin-left: 1em;
+  @media screen and (max-width: 544px) {
+    margin: 0 0 2em 0;
+  }
+}

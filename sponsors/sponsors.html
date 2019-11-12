@@ -1,0 +1,63 @@
+---
+layout: bootstrap
+title: Sponsors
+class: page page-sponsors
+current: sponsors
+stripe: yes
+permalink: sponsors/
+---
+
+<section class="main container">
+  <div class="wrapper clearfix">
+    <h1>Our 2018 Sponsors</h1>
+
+    <section class="sponsors-intro">
+      <p>
+        Rails Girls Summer of Code helps bring more diversity into Open
+        Source, by subsidising programming newcomers to work on an Open Source
+        project of their choice. This is only possible due to the generosity
+        of our amazing sponsors.
+      </p>
+      <p>
+        Find details about our sponsor packages <a href="/sponsors/packages">here</a>.
+        If you have any questions please don't hesitate to <a href="mailto:campaign@rgsoc.org">email us</a>.
+      </p>
+    </section>
+
+    {% for package in site.data.packages %}
+      <section class="sponsors-list sponsors-{{ package.name | downcase}}">
+        <div class="row">
+          <h2 class="hero-title col-md-offset-4 col-md-8">{{package.title}}</h2>
+        </div>
+        <ul>
+          {% for sponsor in package.sponsors %}
+            <li id="{{sponsor.id}}" class="sponsor row">
+              <div class="sponsors {{ package.name | downcase }} sponsors-logo col-md-4">
+                <a href="{{ sponsor.url }}" class="{{ sponsor.id }}" target="_blank"></a>
+              </div>
+              <div class="sponsors-text col-md-8">
+                <p>
+                  {{ sponsor.text }}
+                </p>
+                <h4>
+                  Sponsor in:
+                </h4>
+                <ul class="years">
+                  {% for year in sponsor.years %}
+                    <li class="year" title="Sponsor in {{ year }}">{{ year }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+
+    <section>
+      <h3>Sponsorship Guidelines</h3>
+      <p>Rails Girls Summer of Code is here to support women on their way into Open Source.<br>
+      Please see our <a href="/sponsorship-guidelines">Sponsorship Guidelines</a> for further information on how we stand behind our values.</p>
+    </section>
+  </div>
+</section>
